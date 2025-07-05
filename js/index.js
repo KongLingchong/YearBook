@@ -6,16 +6,16 @@ var mySwiper = new Swiper ('.swiper-container', {
 
     on:{
         init: function(){
-            swiperAnimateCache(this); //隐藏动画元素
-            swiperAnimate(this); //初始化完成开始动画
+            swiperAnimateCache(this); // Hide animated elements
+            swiperAnimate(this); // Initialization completes the start animation
         },
         slideChangeTransitionEnd: function(){
-            swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+            swiperAnimate(this); // The current slide animation is also run at the end of each slide toggle
         }
     },
 });
 
-//音乐图标效果
+// Music Icon Effect
 var music = document.getElementById("music");
 var musicIg = document.querySelectorAll(".musicIg")[0];
 var musicImg = document.querySelectorAll(".musicImg")[0];
